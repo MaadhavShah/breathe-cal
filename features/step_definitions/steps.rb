@@ -104,6 +104,7 @@ Given /skip/ do
   skip_this_scenario
 end
 
+
 Given /^(?:|I )am logged in as "([^"]*)"$/ do |name|
   visit auth_test_path(:name => name)
 end 
