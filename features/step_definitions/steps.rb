@@ -104,6 +104,7 @@ Given /skip/ do
   skip_this_scenario
 end
 
+
 Given /^(?:|I )am logged in as "([^"]*)"$/ do |name|
   visit auth_test_path(:name => name)
 end 
@@ -149,10 +150,6 @@ Then /^I should see city ".*?"$/ do |arg1|
 end
 
 Then /^I should see information about “.*?”$/ do |arg1|
-  # pending
-end
-
-Then /^I should not see “.*?”$/ do |arg1|
   # pending
 end
 
