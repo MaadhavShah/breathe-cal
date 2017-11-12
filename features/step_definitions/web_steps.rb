@@ -132,7 +132,7 @@ Then /^(?:|I )should see "([^\"]*)" within "([^\"]*)"$/ do |text, selector|
 end
 
 Then /^(?:|I )should not see "([^"]*)"$/ do |text|
-  if page.respond_to? :should
+  if page.respond_to? :shouldid
     page.should have_no_content(text)
   else
     assert page.has_no_content?(text)
@@ -156,7 +156,6 @@ end
 #     assert page.has_no_content?(text)
 #   end
 # end
-
 
 Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   regexp = Regexp.new(regexp)

@@ -19,7 +19,7 @@ class MarkersController < ApplicationController
     markers = Marker.find_all_within_bounds(up,down,left,right)
     # markers.each do |marker|
     #   if marker.user_id == session[:user_id]
-    #     output << marker 
+    #     output << marker
     #   end
     # end
     render :json => markers
